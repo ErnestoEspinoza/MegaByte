@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetTipoEquipo" targetNamespace="http://tempuri.org/DataSetTipoEquipo.xsd" xmlns:mstns="http://tempuri.org/DataSetTipoEquipo.xsd" xmlns="http://tempuri.org/DataSetTipoEquipo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="megabyteConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="megabyteConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Megabyte.My.MySettings.GlobalReference.Default.megabyteConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tipos_de_equiposTableAdapter" GeneratorDataComponentClassName="tipos_de_equiposTableAdapter" Name="tipos_de_equipos" UserDataComponentName="tipos_de_equiposTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="megabyteConnectionString (MySettings)" DbObjectName="megabyte.tipos_de_equipos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_tipodeequipo`, `tipo` FROM `tipos_de_equipos`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetTipoEquipo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSetTipoEquipo" msprop:Generator_UserDSName="DataSetTipoEquipo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tipos_de_equipos" msprop:Generator_TableClassName="tipos_de_equiposDataTable" msprop:Generator_TableVarName="tabletipos_de_equipos" msprop:Generator_TablePropName="tipos_de_equipos" msprop:Generator_RowDeletingName="tipos_de_equiposRowDeleting" msprop:Generator_RowChangingName="tipos_de_equiposRowChanging" msprop:Generator_RowEvHandlerName="tipos_de_equiposRowChangeEventHandler" msprop:Generator_RowDeletedName="tipos_de_equiposRowDeleted" msprop:Generator_UserTableName="tipos_de_equipos" msprop:Generator_RowChangedName="tipos_de_equiposRowChanged" msprop:Generator_RowEvArgName="tipos_de_equiposRowChangeEvent" msprop:Generator_RowClassName="tipos_de_equiposRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
